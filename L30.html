@@ -1,0 +1,14 @@
+<!-- innerHTML,innerText,value property; -->
+<p style="border:solid " onclick="fun1(this)">teskkt</p>
+<input type="text" onmouseover="fun2(this)">
+<script type="text/javascript">
+    function fun1(mvu) {
+       // console.log("kahitari")
+        mvu.innerHTML="<b>kontari"
+       mvu.innerText="<b>kontari"
+    }
+    function fun2(ste) {
+        console.log(typeof ste)
+        ste.value= "900";
+    }
+</script>

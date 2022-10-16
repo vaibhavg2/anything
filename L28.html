@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    data1=10;
+    var data2=22;
+    let data3=333;
+    //block scope
+    if(true)
+    {
+        console.log("block fun",data1)
+        console.log("block fun",data2)
+        console.log("block fun",data3)
+
+        rec=10
+        var rec1=11;
+        let rec2 =111;
+    }
+         console.log("after block scope",rec)
+        console.log("after block scope",rec1)
+     //   console.log("after block scope",rec2) ////not able to see in console...
+    //functional scope
+    function myfun(){
+        console.log("function scope",data1)
+        console.log("function scope",data2)
+        console.log("function scope",data3)
+        
+        rec=10
+        var rec1=11;
+        let rec2 =111;
+    }
+    myfun();
+    console.log(rec);
+    //console.log(rec2);
+    //console.log(rec3);
+    let myvat;
+    console.log(myvat);
+    //let myvat;
+    var myvat1;
+    console.log(myvat1);
+    var myvat1;
+    myvat2
+    console.log(vat);
+</script>
